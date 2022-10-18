@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans-4.0.xsd">
+
+    <bean id="config"
+          class="com.google.code.kaptcha.util.Config">
+        <constructor-arg>
+            <props>
+                <prop key="kaptcha.border">no</prop>
+                <prop key="kaptcha.textproducer.font.color">black</prop>
+                <prop key="kaptcha.textproducer.char.space">5</prop>
+
+                <!--<prop key="kaptcha.border">no </prop>-->
+                <!--<prop key="kaptcha.textproducer.font.color">yellow </prop>-->
+                <!--<prop key="kaptcha.textproducer.char.space">5 </prop>-->
+                <!--<prop key="kaptcha.noise.color">white</prop>-->
+                <!--<prop key="kaptcha.background.clear.from">94,71,174</prop>-->
+                <!--<prop key="kaptcha.background.clear.to">66,119,205</prop>-->
+                <!--WaterRipple水纹 鱼眼com.google.code.kaptcha.impl.FishEyeGimpy    阴影com.google.code.kaptcha.impl.ShadowGimpy-->
+                <!--<prop key="kaptcha.obscurificator.impl">com.google.code.kaptcha.impl.ShadowGimpy</prop>-->
+            </props>
+        </constructor-arg>
+    </bean>
+
+    <bean id="producer" class="com.google.code.kaptcha.impl.DefaultKaptcha">
+        <property name="config" ref="config"/>
+    </bean>
+</beans>
