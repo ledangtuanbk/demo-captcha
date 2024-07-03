@@ -11,7 +11,9 @@ class TestCaptchaApplicationTests {
     
     @Test
     void contextLoads() {
-        System.out.println("hello world");
+        while(true){
+        System.out.println("hello world");    
+        }
     }
 
 }
