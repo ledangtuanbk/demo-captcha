@@ -1,7 +1,7 @@
 package com.example.testcaptcha;
 
 import org.junit.jupiter.api.Test;
-import java.lange.RuntimeException;
+import java.lang.RuntimeException;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
