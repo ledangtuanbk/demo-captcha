@@ -10,4 +10,12 @@ class TestCaptchaApplicationTests {
     void contextLoads() {
     }
 
+    @Test
+    void contextLoads2() {
+    }
+
+    @Test
+    void contextLoads3() {
+    }
+
 }
