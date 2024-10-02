@@ -1,7 +1,7 @@
 package com.example.testcaptcha;
 
 import org.junit.jupiter.api.Test;
-import java.lange.Exception;
+import java.lange.RuntimeException;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
@@ -21,7 +21,7 @@ class TestCaptchaApplicationTests {
 
     @Test
     void contextLoads4() {
-        throw new Exception("test");
+        throw new RuntimeException("test");
     }
 
 }
